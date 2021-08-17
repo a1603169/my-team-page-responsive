@@ -1,0 +1,124 @@
+.body {
+  height: 2000px;
+}
+.main_text {
+  display: flex;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -4.5%;
+  max-width: 339px;
+  height: 47px;
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.intro {
+  margin: 0 auto;
+}
+
+
+.intro .intro_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  width: 117px;
+  height: 27px;
+}
+
+.intro .intro_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  max-width: 339px;
+  max-height: 87px;
+}
+
+.team_photoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.team_photoes .photo_box {
+  margin: 30px;
+}
+
+
+.team_photoes .photo_box:nth-child(3n-1) {
+  transform: translate(0, 50px)
+}
+
+
+.photo_contents {
+  display: flex;
+}
+
+.photo_contents .job-title {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+
+.photo {
+  width: 264px;
+  height: 383px;
+}
+
+.name {
+  margin: 15px 0;
+}
+
+.footer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media(max-width: 1107px) {
+.team_photoes .photo_box:nth-child(3n-1) {
+  transform: translate(0, 0)
+}
+.team_photoes .photo_box:nth-child(2n) {
+  transform: translate(0, 50px);
+}
+
+@media(max-width: 751px) {
+  .main_text {
+    margin-left: 50px;
+  }
+
+  .main_text .title {
+    margin-left: 50px;
+  }
+
+  .intro {
+    margin-left: 50px;
+  }
+
+  .photo {
+    max-width: 177.42px;
+    max-height: 283.68px;
+  }
+  .photo_box {
+    margin-top: 30px;
+  }
+  .team_photoes {
+    min-width: 500px;
+  }
+
+  .main_text {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+}
